@@ -1,0 +1,286 @@
+
+Topic: 
+Imdb ratings between different genres
+ANOVA test to see if they are different (for a couple of main genres)
+Follow up analysis answers our question
+
+Why:
+Want to have a metric to find the most enjoyable movie with the least amount of time spent searching - don’t want to waste time.
+By genre, very easy, can filter and pick at random, very quick, find a way to get most entertainment. 
+
+
+Data:
+Randomly sampled around 30-50 movies for each genre and their ratings, get means and stuff, perform analysis.
+
+Graph confidence intervals afterward to find the couple of best / highest mean ratings, best genres. 
+
+Narrow down each movie to one genre, then run ANOVA?
+
+OR:
+
+
+Same topic + why
+
+Find best combination of genres in a movie:
+
+But not ANOVA, series of two-sample t-tests for a difference in means
+Test, for all genres, if including them improves average score. 
+
+Then each genre (or a set of key genres) is 0 1, for all 0, don’t include, for 1, maybe include
+
+Algorithm for selecting movies off of this information:
+Take random remaining genre, add on to list of required genres, filter out all movies without this genre. 
+Either stop there and choose a random movie out of the list of remaining movies, or continue on (only if possible) (both random).  
+
+
+
+
+Chi Square - see if the distribution of each matches 
+
+
+
+Confirmed
+Topic: Mean Imdb ratings between different genres
+
+Why:
+Want to have a metric to find the most enjoyable movie with the least amount of time spent searching - don’t want to waste time.
+By genre, very easy, can filter and pick at random, very quick, find a way to get most entertainment. 
+
+Method:
+
+Test: Two-sample t tests for a difference in population means
+
+H: Two means are same (movies with genre / movies w/out genre)
+Ha: Movies w/ genre are higher rating on average than movies w/out genre (including genre produces positive effect)
+
+At 0.05 level
+
+Conditions:
+
+n = 30
+R - SRS
+I - more than 300 total movies w/ genre + movies w/out genre
+N - sizes are both large - CLT
+
+
+Run this three times for all genres:
+
+Sampling method - randomly choose 30
+
+
+What we want from each sample:
+
+Mean + stdev
+
+From each test:
+
+t-statistic and p 
+
+ 
+Introduction:
+Audio (Narration):
+The following documentary will be detailing MK-Ultra, and the numerous conspiracy theories surrounding it. 
+Visuals:
+Montage of Cold War-era footage: nuclear drills, espionage headlines, and CIA emblem.
+
+
+Black-and-white photos of CIA headquarters and early intelligence operations.
+
+
+Thesis:
+Audio (Narration):
+The CIA’s MKUltra program, a project so extreme its details read like fiction, is now a confirmed case of government overreach, revealing how fear-driven policies during the Cold War led to unethical human experimentation, and sparking persistent conspiracy theories about mind control, covert assassinations, and psychological manipulation that remain unresolved to this day.
+Visuals:
+Declassified MKUltra documents with redacted sections.
+
+
+Newspaper headlines about MKUltra revelations.
+
+
+
+Background (Assertion 1):
+Audio (Narration):
+MKUltra was a real, government-funded program that violated ethical and legal boundaries under the pretext of national security during the Cold War.
+Visuals:
+Archival footage of Cold War propaganda films.
+
+
+Images of OSS operatives and early CIA activities.
+
+
+Audio (Narration):
+To understand what MKUltra was, and how it even exists in the first place, it is necessary to go back to the setting of the Cold War. 
+Visuals:
+Map highlighting the geopolitical tensions between the U.S. and USSR.
+
+
+Photographs of espionage activities and spy exchanges.
+
+
+Audio (Narration):
+It all started during WWII. The Office of Strategic Services (OSS), the precursor to the CIA, started experimenting on human subjects, both willing and unwilling, in order to develop a “truth serum”: something that could be used to loosen up individuals during interrogations, make them talk. Administering marijuana was the primary method used, a drug that could disturb cognitive functions and was reported to reduce suspicion and caution, making the subject more open to conversation.
+Visuals:
+Black-and-white footage of OSS laboratories.
+
+
+Reenactments or illustrations depicting early interrogation experiments.
+
+
+Audio (Narration):
+Following the Second World War, the US raced to secure as many German scientists as possible before the Soviets could; Germany had always had a technological edge throughout the course of the war, and, in anticipation of a technological race against the Soviet Union, the US initiated Operation Paperclip - an initiative that smuggled over 1600 German Scientists into the US, regardless of their involvement in the horrific atrocities that the Nazi Regime committed. Many of these scientists’ original records were destroyed, washing out any connection they had to the Nazi Party in order to recruit them into the US. We needn’t look too far to see what kind of people were being safeguarded for the sake of technological progress. 
+Visuals:
+Photographs of German scientists arriving in the U.S.
+
+
+Documents and images related to Operation Paperclip.
+
+
+Audio (Narration):
+Hubertus Strughold, the famed “Father of Space Medicine”, was a critical part of the US Space Program, designing NASA’s life support systems. He also conducted fatal experiments on the prisoners of concentration camps, placing them in low-pressure chambers and freezing conditions. 
+Arthur Rudolph, the project director of NASA’s Saturn V rocket, headed the Mittelbau-Dora Concentration Camp, which killed off as many as 20,000 people. These were the people the US was racing to bring in and support military research.
+Visuals:
+Photographs of Hubertus Strughold and Arthur Rudolph
+
+
+Audio (Narration):
+In the 1950s, when communist paranoia was at its highest - to put this in context this was during the times of the Second Red Scare - the US expanded on its research for a “truth serum”. The CIA was convinced that the Soviets and other Communist regimes had developed methods to control and manipulate minds, using them on US POWs taken during the Korean War. The CIA initiated Project Bluebird in 1950, its goal to find ways to induce amnesia through drugs and electroshock treatments. Bluebird evolved into Project Artichoke, which further experimented with sensory deprivation in order to achieve behavior modification, and in 1953, Artichoke became MK-Ultra, an umbrella term for many smaller sub projects spanning throughout prestigious institutions across the nation, such as universities like Cornell and Georgetown. Most notable of these sub projects were the LSD experiments and Dr. Ewen Cameron’s experiments. The end goal was developing ways to control and manipulate the mind. 
+Visuals:
+Declassified documents referencing Projects Bluebird and Artichoke + MK-Ultra.
+
+
+Stock footage of 1950s psychiatric hospitals and treatment methods.
+
+
+Audio (Narration):
+LSD, a powerful drug that can cause visual and auditory hallucinations, was a key part of many MK-Ultra experiments. Headed by Sidney Gottlieb, experiments were carried out in hospitals, universities, and various other locations in an attempt to develop a method to manipulate the mind. Operation Midnight Climax was one of many projects involving LSD experiments where CIA agents like George Hunter White lured unsuspecting victims to CIA safehouses, after which they were drugged and observed unconcernedly. 
+Visuals:
+Photographs of Sidney Gottlieb and CIA safehouses.
+
+
+Artistic representations of LSD-induced hallucinations.
+
+
+Audio (Narration):
+Dr. Donald Ewen Cameron was a prominent psychiatrist in Canada who became involved in MKUltra through a CIA-funded project at the Allan Memorial Institute, part of McGill University in Montreal. His work was among the most extreme and disturbing experiments conducted under the MKUltra umbrella. In an attempt to find a new way to treat mental illness through essentially destroying and rebuilding the mind, he administered experiments where he drugged, performed electroconvulsive shocks, and psychologically tortured his patients with sensory isolation and repeated taped messages. Many of his patients came in with mild problems, and left with serious psychological damage. 
+Visuals:
+Images of the Allan Memorial Institute.
+
+
+Testimonies or dramatizations of patient experiences.
+
+
+Audio (Narration):
+In 1973, as the Watergate scandal broke, increased governmental investigation into the activities of the CIA led CIA Director Richard Helms to order all MKUltra documents destroyed, erasing the full scope of the program. Only a small amount of documents misfiled as financial records survived, which were discovered in 1977 and later released during the Senate Church Committee investigations.
+Visuals:
+News footage of the Watergate scandal.
+
+
+Clips from the Senate Church Committee hearings.
+
+
+
+Conspiracies About the History of MKUltra (Assertion 2):
+Audio (Narration):
+The secrecy surrounding MKUltra, including destroyed records and unexplained deaths, has fueled lasting conspiracy theories about murder, mind control, and government manipulation.
+Visuals:
+Montage of redacted documents and mysterious deaths linked to MKUltra.
+
+
+Interviews with conspiracy theorists and experts.
+
+
+Audio (Narration):
+Frank Olson’s death is perhaps one of the most enduring mysteries from the MK-Ultra programs. As an army chemist that worked for the Special Operations Division (SOD) - the CIA’s partner in behavior control research - Dr. Olson had particular ties to project MK-Ultra. While at a CIA-SOD retreat at Deep Creek, Maryland, in 1953, he was secretly dosed with LSD by his CIA superviser; 10 days later, he fell 13-stories to his death from the window of a New York City hotel room. Olson had never taken the drug prior, and his death was ruled as suicide due to depression caused by the drug. 
+However, many were still unsatisfied with this conclusion, particularly his family, and with justifiable evidence. Olson had worked at Fort Detrick in Maryland for over a decade, experimenting with biological warfare for the CIA, and had subsequently learned most of MK-Ultra’s deepest and darkest secrets. What’s more, he was beginning to express doubts about the morality of the project as a whole, and even considered resigning, leaving the entire project in danger of exposure. Furthermore, a second autopsy by Olson’s son in 1994 revealed wounds suggesting that Olson had been knocked out before he fell through the window, contradicting the narrative the CIA weaved. 
+Frank Olson's death remains a potent symbol of the dangers of unchecked government power and secrecy. It exemplifies how the secretive nature of programs like MKUltra can lead to tragic outcomes and enduring conspiracy theories.
+Visuals:
+Photographs of Frank Olson and the hotel from which he fell.
+
+
+Reenactments or dramatizations of the events leading to his death.
+
+
+Audio (Narration):
+The term "Manchurian Candidate" entered public consciousness through Richard Condon's 1959 novel and its 1962 film adaptation. Befitting a person programmed to carry out missions, including assassinations, without conscious awareness, it seemed just to be the stuff of fiction. 
+However, declassified documents from MKUltra reveal that the CIA's interest in such possibilities was more than fiction. 
+Visuals:
+Clips from "The Manchurian Candidate" film.
+
+
+Declassified documents discussing mind control experiments.
+
+
+Audio (Narration):
+John Marks, in his 1979 book The Search for the “Manchurian Candidate”: The CIA and Mind Control: The Secret History of the Behavioral Sciences, compiles records revealing the CIA’s experiments involving hypnosis, LSD, and sensory deprivation in order to explore behavioral modification and control. The goal? To find ways to manipulate individuals to perform assassination and espionage against their will. These Manchurian Candidates would be the perfect spies and soldiers in essence, completely subservient while being impossible to extract information out of. 
+Visuals:
+Cover of John Marks' book.
+
+
+Historical footage of hypnosis and sensory deprivation experiments.
+
+
+Audio (Narration):
+Over the years, various high-profile assassins, such as Sirhan Sirhan, who killed Robert F. Kennedy in 1968, have been speculated to be products of mind control experiments. During his trial, Sirhan claimed to have no memory of the assassination, leading to theories that he was hypnotized and was a programmed assassin. While no concrete evidence links him to MKUltra, the secrecy surrounding the program and the destruction of many records in 1973 have fueled such theories.
+Visuals:
+News footage of Robert F. Kennedy's assassination.
+
+
+Courtroom sketches and photographs of Sirhan Sirhan.
+
+
+
+Conspiracies About Events Relating to MKUltra (Assertion 3):
+Audio (Narration):
+MKUltra’s legacy continues today through conspiracy theories that link the project to celebrity mind control, mass shootings, and covert social programming, despite a lack of concrete evidence.
+Visuals:
+Montage of celebrity incidents and mass shooting events.
+
+
+Social media posts and news headlines discussing these theories.
+
+
+Audio (Narration):
+Although Project MKUltra was officially exposed in the 1970s and publicly condemned by the U.S. Senate, its legacy did not die with the hearings. Instead, it evolved - fueling new theories about the government’s hidden use of psychological control. One of the most enduring and disturbing of these is the theory of Project Monarch. The theory is sustained by the lack of official accountability: there were over 150 MKUltra subprojects, many undocumented, and the systematic destruction of records ordered by then-CIA Director Richard Helms in 1973 has shrouded these forever in mystery. 
+Visuals:
+Illustrations or animations depicting the alleged methods of Project Monarch.
+
+
+Interviews with proponents and skeptics of the theory.
+
+
+Audio (Narration):
+Project Monarch, not officially acknowledged in any government documents, is believed by some to be an offshoot of MKUltra, specializing in trauma-based mind control. According to theorists, it allegedly uses methods such as sexual abuse, electroshock, and ritual trauma to fragment a subject’s mind, creating dissociative personalities that can be triggered at will.
+In the 1990s, conspiracy researcher Cathy O’Brien popularized the theory with her book Trance Formation of America, claiming she was a Monarch mind control slave used by high-level U.S. officials.
+Visuals:
+Cover of Cathy O’Brien's book.
+
+
+Photographs of Cathy O’Brien and related events.
+
+
+Audio (Narration):
+Celebrity “glitches” have often been cited as evidence of Monarch mind control, times where popular celebrities make actions that make no apparent sense, supposedly as a result of their minds “fighting back” against the programming. Events like Cardi B staring into space during an interview at the 2018 Grammys, Britney Spears’ 2007 meltdown, and Mariah Carey’s glitter breakdown all reportedly support this theory. 
+Visuals:
+Clips of the mentioned celebrity incidents.
+
+
+Analysis segments from media outlets discussing these events.
+
+
+Audio (Narration):
+Even mass shooters have been claimed to be “manchurian candidates” trained through Project Monarch. Shooter James Holmes reportedly told psychiatrists that he was “programmed” and “hypnotized.” Myron May, who opened fire at Florida State University, claimed he was being targeted and controlled by government forces. These mental breaks are often interpreted by conspiracy theorists as signs of covert psychological programming.
+Visuals:
+News
+Audio (Narration):
+No hard evidence links any mass shooter or celebrity breakdown to modern mind control programs. But MKUltra proved the interest - and the willingness - of the U.S. government to conduct dangerous experiments on its own citizens. The conspiracy endures not because of what we know, but because of what we don’t.
+Visuals:
+Montage of redacted documents and modern-day conspiracy forums.
+
+Audio (Narration):
+Whew, that was a lot to get through. I’ve read a lot of both wild out-there conspiracies, and true facts that seem more bizarre than the conspiracies themselves. I can confidently say that researching MK-Ultra has completely changed my view of the US government - I initially thought half the stuff I read about some of the experiments they conducted had to have been made up; they were far too inhumane. Maybe I was just naive. But that revelation has led me to believe any of these conspiracies might as well be true - I would be a lot less surprised if they were than I was before starting this project. There is a possibility, but I’m not convinced, mainly because I haven’t found, nor does there seem to be, any hard evidence linking Mk-Ultra to any of the claims that theorists are boasting about. But more so than that, I wouldn’t want any of these theories to be true - the implications of the government taking an active role in manipulating both the general public and turning innocent individuals into super-soldiers or mindless puppets are terrifying. How can we feel safe and secure when the very government that is supposed to protect us is remorselessly violating the human and civil rights of its citizens? 
+Visuals:
+Slow-motion clips of American flags waving, juxtaposed with surveillance cameras
+Montage of protest footage advocating for government transparency.
+Scene from Captain America: The Winter Soldier showing Bucky Barnes being controlled by code words.
+
+

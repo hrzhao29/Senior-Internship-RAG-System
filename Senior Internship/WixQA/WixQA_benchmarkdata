@@ -1,0 +1,25 @@
+batch 1
+15 passed 5 failed
+
+batch 2
+5 passed 0 failed
+
+batch 3 
+4 passed 1 failed
+
+batch 4
+20 passed 12 failed
+
+batch 5
+22 passed 8 failed
+
+batch 6
+34 passed 16 failed
+
+batch 7 
+33 passed 25 failed 
+
+
+total;
+133 passed 67 failed 
+

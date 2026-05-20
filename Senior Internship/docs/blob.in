@@ -1,0 +1,49 @@
+So let's say one day you really want to watch a movie, but you don’t want to waste time finding a good movie because time is valuable right , so you want an easy and time efficient way to find a good movie on average. 
+Now you would also probably want to be able to roughly control the type of movie that you’ll be watching, so it naturally follows that using genre to filter out the good movies would be a good idea. 
+
+And so my question was - are some genres of movies better than others?
+And to keep it simple I used the IMBD ratings as the metric to compare the quality of the movies.
+And to explain why I choose my final method to be what it was, I want to explain my initial ideas and the more directly intuitive ones. 
+
+And my first idea was just to compare all genres at once using an ANOVA F-test on the average ratings of all genres.
+Now the problem that I encountered with this is the fact that movies be of have many different genres at once, so the populations that you’re sampling from are not completely disjoint, which I assume poses problems with the validity of the test. 
+And so you could solve this by condensing every movie down to one core genre, but many times that can be really hard to figure out which one is the most important genre in a movie, and if there is even a most representative genre of that movie, as many genres could be seemingly equally as relevant to the movie, and it wouldn't make sense to drop any of them from the movie.
+There also is the practical problem of having to manually condense every movie sampled to a single genre, which could take a long time if you’re lets say taking samples of size 30 from 20 different genres. 
+
+And so this led me to think of looking at each genre independently, as it then becomes very easy to determine the populations that you are sampling from - either they have that genre, or they do not. And with this method, while you cant determine which genres are “best”, as in they have the overall highest IMBD ratings, you can determine which genres are “good’, which I'll define shortly.
+
+So what I actually did was run two-sample t tests on all of the genres separately, with the null hypothesis being that the average rating of all movies with that genre is equal to the average rating of all movie without that genre, and the alternative hypothesis being that the average rating of all movies with that genre is actually higher than the average rating of all movies without that genre. And so what this test will tell us is that if it is passed, then this genre on average improves the rating of a random movie we might choose to watch. 
+
+Now what you can do with this information is compile a list of “good” genres, and randomly select a subset of these genres and include that entire subset in your filtered search for a movie. And since each genre in this list of “good” genres individually improves the expected rating of a randomly chosen movie, it would make sense for including multiple “good” genres, like all those in your randomly chosen subset, to also improve the expected rating overall, because their individual positive effects should probably line up in some way. 
+
+Now going over the specifics of my study - 
+I got data from the publicly available IMDB dataset for all movies, shows, etc hosted on its website. You can just download the entire tsv file, which is like around 900 mbs I think, and it contains for every entry its genre and rating, which is all you need. 
+
+For the testing, I did 5 trials for every genre, and for every trial, I took samples of size 300 from all of the movies in the dataset - twice, for the movies with that genre and the movies without. I used a random number generator in python to sample the movies, which is technically pseudo-random but the seed should be set by clock time or something, which is effectively random. 
+I also sampled with replacement, meaning I could’ve sampled the same movie twice, and since my sample size was much greater than 30, the sampling distribution of sample means should be roughly normal by the CLT. 
+So all the conditions for inference were met. 
+I did the tests at the 0.05 significance level, and I only considered a genre to be “good” if it was under that level for all 5 trials. 
+
+Now the results that I got - I ran this on 24 different genres, and a couple of these passed all 5 trials.
+[read off of slide]
+Film-noir is supposed to be a hollywood crime-drama or something - im not too sure.
+Just to show one of the results just for perhaps a more clear view on how this testing worked, [explain slide]
+The other genres’ tests are identical to this one, and their results were very similar, all being very very close to zero. 
+I’ll admit I wasn’t too satisfied with these results, as I guess it makes sense that things like documentaries and biographies would be generally rated higher as they should have more effort and quality put into them, but it didn’t really feel helpful - I don’t think many of us would go out of our way to find a biography or documentary to watch when we’re feeling bored.
+
+And to solve this pressing dissatisfaction, I ran these tests again hoping for better results. But this time after removing all of the movies that were documentaries, or biographies, or any of the genres previously listed as “good”, and so they couldn’t possibly be sampled.
+
+And the results now were actually pretty decent. 
+[read off of slide]
+At least for me, these were more helpful as genres that I would actually consider watching. 
+Again, here is a ss of the results for the tests for drama. [read off slide?]
+
+So now I have some final concluding thoughts.
+First is the fact that it is possible, with 24 different genres, for some to pass all 5 trials of the two-sample t-test by chance. 
+Now since my significance level is 5%, there is a 5% chance for a not “good” genre to pass a single trail, and a 0.05^5 chance of it passing all five, which is very, very low. Among all 24, the expected number of bad genres passing off as good is much much less than 1, so we can be pretty confident that all tested “good” genres are actually good.  
+
+Also, something I found to be pretty funny, is that horror movies are terribly rated. You could run the test in the other direction to find out if they are actually worse, but a P-value of 1 is crazy for all 5 trials. By far the worst genre just going off of p-values. 
+Good idea to avoid horror if you care about the rating of the movie at all. 
+
+And yea, that's all. Thank you for listening to my presentation!
+
